@@ -1,5 +1,11 @@
 * {box-sizing:border-box}
 
+img {
+   height: 400px;
+   width: 300px;
+   object-fit: cover;
+}
+
 /*Slideshow container*/
 .slideshow-container {
    max-width: 1000px;
