@@ -41,7 +41,7 @@ const Color = "Tan";// Declaring a constant
 function constant_function() {
    constant_function[1] = ["Red"];
    constant_function[2] = ["Blue"];
-   constant_function[3] = [ "Green"];
+   constant_function[3] = [ "Green"]; 
    constant_function[4] = ["Yellow"];
    constant_function[5] = ["Black"];
    constant_function[2] = ["Dark Blue"];
@@ -58,24 +58,27 @@ function myFunction1() {
    let T = 63; //declared in a limited scope
    document.getElementById("Let").innerHTML = T;  //Output is 63 because it was last declared and within the scope of let 
 }
+var P = "";
 
-//         function myFunction7() {
-  //       return Math.PI;
-    //     }
-      //   document.getElementById("Pie").innerHTML = myFunction7(); 
-      //getting an error back on this code 
-
-
+function myFunction7() {
+   return Math.PI;
+   document.getElementById("Pie").innerHTML = P;
+ }
+ 
 
 function myFunction3(){
 let drink = {
    base: "Mocha",
    topping: "Caramel",
    style: "Iced",
-   roast: "Medium",
-   description : myFunction3() {
-
+   roast: "Medium",}
+ 
+      document.getElementById("Coffee").innerHTML = drink.myFunction3();
       return "The drink is a " + this.style + this.topping + this.base + "Coffee.";
-   }
+   
 };
-document.getElementById("Coffee").innerHTML = drink.description(); 
+ 
+
+// description : myFunction3() 
+
+
