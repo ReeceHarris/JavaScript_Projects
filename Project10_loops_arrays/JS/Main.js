@@ -38,18 +38,18 @@ function scenery() { //Declares function scenery
 const Color = "Tan";// Declaring a constant
 
 
-function constant_function() {
-   constant_function[1] = ["Red"];
+function constant_function() {    //Declares function
+   constant_function[1] = ["Red"];  //Declares function object
    constant_function[2] = ["Blue"];
    constant_function[3] = [ "Green"]; 
    constant_function[4] = ["Yellow"];
    constant_function[5] = ["Black"];
-   constant_function[2] = ["Dark Blue"];
-   constant_function[6] = [constant_function[1] +" "+ constant_function[3]];
+   constant_function[2] = ["Dark Blue"]; //updates constant function 2 from blue to dark blue
+   constant_function[6] = [constant_function[1] +" "+ constant_function[3]]; 
 
 
 
-   document.getElementById("Constant").innerHTML = "Picking a background color is important. Here's an example shade you may like " + constant_function[2] + " or maybe " + Color + " or perhaps a mix of colors like " + constant_function[6] ,".";
+   document.getElementById("Constant").innerHTML = "Picking a background color is important. Here's an example shade you may like " + constant_function[2] + " or maybe " + Color + " or perhaps a mix of colors like " + constant_function[6] ,"."; //sends string to html doc 
 }
 
 var T = 69; //delcared globally 
@@ -68,15 +68,15 @@ function myFunction7() {                            //Declares myFunction7
 
 function myFunction3(){                    //Declares myFunction3
    let drink = {                           // declares var drink locally and gives attributes 
-      base: "Mocha",                       // 
-      topping: "Caramel",                  // 
-      style: "Iced",                       //  
-      roast: "Medium",                     // 
-      myfunction4:  function() {           //
+      base: "Mocha",                       // ''
+      topping: "Caramel",                  // ''
+      style: "Iced",                       //  ''
+      roast: "Medium",                     // ''
+      myfunction4:  function() {           // Creates local scope function to successfully run return command
          return "The drink is a " + this.style + this.topping + this.base + "Coffee.";
       }
    }
-   document.getElementById("Coffee").innerHTML = drink.myfunction4();
+   document.getElementById("Coffee").innerHTML = drink.myfunction4();  //Sends function results of myFunction3
       
    
 };
