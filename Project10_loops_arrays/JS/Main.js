@@ -60,25 +60,42 @@ function myFunction1() {
 }
 var P = "";
 
-function myFunction7() {
-   return Math.PI;
+function myFunction7() {                            //Declares myFunction7
+   P =  Math.PI;                                    //Local scope P variable = 3.14159etc 
    document.getElementById("Pie").innerHTML = P;
- }
+}
  
 
-function myFunction3(){
-let drink = {
-   base: "Mocha",
-   topping: "Caramel",
-   style: "Iced",
-   roast: "Medium",}
- 
-      document.getElementById("Coffee").innerHTML = drink.myFunction3();
-      return "The drink is a " + this.style + this.topping + this.base + "Coffee.";
+function myFunction3(){                    //Declares myFunction3
+   let drink = {                           // declares var drink locally and gives attributes 
+      base: "Mocha",                       // 
+      topping: "Caramel",                  // 
+      style: "Iced",                       //  
+      roast: "Medium",                     // 
+      myfunction4:  function() {           //
+         return "The drink is a " + this.style + this.topping + this.base + "Coffee.";
+      }
+   }
+   document.getElementById("Coffee").innerHTML = drink.myfunction4();
+      
    
 };
+
+
  
 
-// description : myFunction3() 
+  function myFunction8() {             //Declares loop function 
+   var Digit2 = "";                    //Declares empty var for keeping count of total values produced
+   var W = 1;                          //declares base value of W
+   while (W < 25) {
+      //if (W == 5){continue;}          // Breaks the function not sure why
+      if (W == 20){break;}             //Exits loop when W = 20 
+      Digit2 += "<br>" + W;            //outputs the Digit and a return 
+      W++;                             //Increments X everytime the loop is ran
+   }
+    document.getElementById("Counting_to_Twenty").innerHTML = Digit2;//Sends results to html doc
+   }
+   
+
 
 
