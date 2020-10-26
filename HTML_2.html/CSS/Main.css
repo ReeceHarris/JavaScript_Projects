@@ -1,0 +1,7 @@
+input[type=text] {
+   border: 3px solid grey;
+   border-radius: 3px;
+   background-color: rgb(95, 95, 95);
+   color: whitesmoke;
+}
+
