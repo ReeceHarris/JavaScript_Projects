@@ -1,0 +1,77 @@
+#menuBG { /*Styling for Title*/
+   width: 400px;
+   height: 470px;
+   margin: 50px auto;
+} 
+
+#frmMenu {  /*Main Menu Stylling*/
+   width: 400px;
+   height: 200px;
+}
+
+#totalPrice {  /*Styling for text of Price*/
+   width: 200px;
+   height: 190px;
+   margin: 0 auto;
+   float: right;
+}
+
+.left { /*Formatting for Size*/
+   width: 33.33%;
+   height: 200px;
+   float: left;
+   margin: auto;
+   
+}
+ 
+.right { /*Formatting for Meat*/
+   width: 33.33%;
+   height: 200px;
+   margin:  auto;
+   float: right;
+}
+
+.center { /*Formatting for Vegies*/
+   width: 33.33%;
+   height: 200px;
+   margin:  auto;
+   float: center;
+}
+
+#showText { /*Text stylling*/
+   width: 200px;
+   height: 190px;
+   margin: 0px auto;
+   float: left;
+}
+
+#cart {  /*Text of cart */
+   top:0;margin:0px auto;
+   width: 400px;
+   height: 200px;
+}
+
+#btnOrder { /*Button Stylling*/
+   margin: 10px 0px 0px 100px;
+   width: 100px;
+   height: 40px;
+}
+
+body {  /*Background Color*/
+   background-color: rgba(23, 0, 128, 0.774);
+}
+
+h1 { /*h1 tag stylling*/
+   font-family: sans-serif;
+   color: yellow;
+   
+}
+
+h3 { /*h3 Styling*/
+   font-family: 'Times New Roman', Times, serif;
+   color: greenyellow;
+}
+
+div { /*div tag styling*/
+   color: gold;
+}
